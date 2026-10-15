@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Poppy story</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+    margin:0;
+    background:#08090d;
+    color:white;
+    font-family:'Vazirmatn',sans-serif;
+    text-align:center;
+    overflow-x:hidden;
+}
+header{padding:35px 15px 25px}
+.logo{
+    font-family:'Vazirmatn',sans-serif;
+    font-size:45px;
+    font-weight:900;
+    color:#ffffff;
+    -webkit-text-stroke:1px #000000;
+    text-shadow:none;
+}
+.version{
+    margin-top:8px;
+    color:#888;
+    font-size:14px;
+    font-weight:600;
+}
+.subtitle{
+    margin-top:15px;
+    color:#b7b7bd;
+    font-size:18px;
+    font-weight:500;
+    line-height:2;
+}
+.container{width:92%;max-width:650px;margin:auto}
+.card{
+    background:#101117;
+    border:3px solid;
+    border-radius:32px;
+    padding:25px 18px;
+    margin:20px 0;
+    cursor:pointer;
+    overflow:hidden;
+    transition:transform .25s ease;
+}
+.card:active{transform:scale(.98)}
+.card h2{
+    margin:0;
+    font-family:'Vazirmatn',sans-serif;
+    font-size:25px;
+    font-weight:800;
+    line-height:1.8;
+}
+.details{
+    display:none;
+    margin-top:22px;
+    padding:22px 18px;
+    background:#0b0c11;
+    border-radius:22px;
+    text-align:right;
+    font-family:'Vazirmatn',sans-serif;
+    font-size:16px;
+    font-weight:500;
+    line-height:2.3;
+    color:#eeeeee;
+}
+.details.show{display:block}
+
+.chapter0{border-color:#ff9d00}
+.chapter1{border-color:#2196f3}
+.chapter2{border-color:#ff69b4}
+.chapter3{border-color:#9b59ff}
+
+/* رنگ نزدیک به Doey - بدون ایموجی 🩵 */
+.chapter4{border-color:#66d9e8}
+
+.chapter5{border-color:#eeeeee}
+.project{border-color:#ff8c00}
+
+.channel{
+    margin:40px 10px 25px;
+    padding:25px 15px;
+    background:#101117;
+    border:2px solid #444;
+    border-radius:25px;
+    overflow:hidden;
+}
+.channel-title{
+    margin-bottom:14px;
+    font-size:20px;
+    font-weight:600;
+    color:white;
+}
+.channel a{
+    display:block;
+    width:100%;
+    max-width:100%;
+    padding:5px;
+    color:#00bfff;
+    text-decoration:none;
+    font-family:Arial,sans-serif;
+    font-size:21px;
+    font-weight:bold;
+    direction:ltr;
+    text-align:center;
+    line-height:1.6;
+    overflow-wrap:anywhere;
+    word-break:break-word;
+}
+footer{
+    margin-top:30px;
+    padding:30px 20px;
+    background:#0e0f14;
+    color:#aaa;
+    font-size:15px;
+    font-weight:500;
+    line-height:2.2;
+}
+@media(max-width:480px){
+    .logo{font-size:38px}
+    .subtitle{font-size:16px}
+    .card h2{font-size:22px}
+    .details{font-size:15px}
+    .channel a{font-size:19px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">𝗣𝗼𝗽𝗽𝘆 𝘀𝘁𝗼𝗿𝘆</div>
+<div class="version">نسخه ۱.۰</div>
+<div class="subtitle">اطلاعات و داستان‌های دنیای Poppy Playtime</div>
+</header>
+
+<div class="container">
+
+<div class="card chapter0" onclick="openCard(this)">
+<h2>Chapter 0 : شروع ماجرا 🧩</h2>
+<div class="details">
+Chapter 0 مقدمه‌ای برای ورود به دنیای Poppy Playtime است.
+<br><br>
+در این بخش، بازیکن با محیط کارخانه و اتفاقات مرموز آن آشنا می‌شود
+و باید با حل معماها مسیر خود را پیدا کند.
+</div>
+</div>
+
+<div class="card chapter1" onclick="openCard(this)">
+<h2>Chapter 1 : کارخانه اسباب‌بازی متروکه 💙</h2>
+<div class="details">
+داستان از جایی شروع می‌شود که شخصیت اصلی، پس از دریافت یک پیام مرموز،
+به کارخانه‌ی متروکه‌ی Playtime Co. برمی‌گردد.
+<br><br>
+سال‌ها قبل تمام کارکنان کارخانه به‌طور ناگهانی ناپدید شده‌اند.
+<br><br>
+در داخل کارخانه، محیط تاریک و خالی است و اتفاقات عجیبی رخ می‌دهد.
+<br><br>
+شخصیت اصلی با استفاده از GrabPack راه خود را باز می‌کند
+و با معماها و موانع مختلف روبه‌رو می‌شود.
+<br><br>
+اما خیلی زود مشخص می‌شود که کارخانه آن‌قدرها هم خالی نیست؛
+عروسک‌ها و اسباب‌بازی‌های زنده در تاریکی منتظر هستند.
+<br><br>
+مهم‌ترین آن‌ها Huggy Wuggy است که تعقیب شخصیت اصلی را آغاز می‌کند.
+<br><br>
+در پایان، پس از فرار از Huggy Wuggy،
+داستان با پیدا شدن یک سرنخ درباره‌ی Poppy ادامه پیدا می‌کند.
+<br><br>
+<b>پایان Chapter 1: کارخانه اسباب‌بازی متروکه</b>
+</div>
+</div>
+
+<div class="card chapter2" onclick="openCard(this)">
+<h2>Chapter 2 : فرار از قطار 💗</h2>
+<div class="details">
+پس از اتفاقات چپتر اول، شخصیت اصلی همچنان در کارخانه‌ی متروکه‌ی
+Playtime Co. گرفتار است.
+<br><br>
+در این بخش Poppy پیدا می‌شود و شخصیت اصلی متوجه می‌شود
+که او اطلاعات بیشتری درباره‌ی کارخانه دارد.
+<br><br>
+اما موجود خطرناکی به نام Mommy Long Legs ظاهر می‌شود.
+<br><br>
+شخصیت اصلی مجبور است از بازی‌های مختلف کارخانه عبور کند
+و با چالش‌های خطرناک روبه‌رو شود.
+<br><br>
+پس از رویارویی نهایی با Mommy Long Legs،
+شخصیت اصلی به سمت قطار می‌رود و فکر می‌کند بالاخره می‌تواند
+از کارخانه خارج شود.
+<br><br>
+اما Poppy مسیر قطار را تغییر می‌دهد.
+<br><br>
+قطار از مسیر اصلی خارج شده و شخصیت اصلی دوباره در بخش دیگری
+از کارخانه گرفتار می‌شود.
+<br><br>
+<b>پایان Chapter 2: فرار از قطار</b>
+</div>
+</div>
+
+<div class="card chapter3" onclick="openCard(this)">
+<h2>Chapter 3 : خواب عمیق 🌙</h2>
+<div class="details">
+پس از اتفاقات چپتر دوم، شخصیت اصلی وارد منطقه‌ای بزرگ و مرموز
+به نام Playcare می‌شود.
+<br><br>
+Playcare در گذشته محلی برای نگهداری کودکان کارخانه بوده،
+اما پشت ظاهر آرام آن اتفاقات ترسناکی رخ داده است.
+<br><br>
+شخصیت اصلی در محیط‌های مختلف Playcare با آزمایشگاه‌ها،
+اتاق‌های قدیمی و سرنخ‌هایی از گذشته‌ی کارخانه روبه‌رو می‌شود.
+<br><br>
+در ادامه CatNap ظاهر می‌شود؛ موجودی خطرناک که به Prototype
+وفادار است و شخصیت اصلی را تعقیب می‌کند.
+<br><br>
+شخصیت اصلی همچنین با DogDay و Miss Delight روبه‌رو می‌شود
+و اطلاعات بیشتری درباره‌ی کودکان، آزمایش‌ها و موجودات کارخانه
+به دست می‌آورد.
+<br><br>
+در پایان، شخصیت اصلی با CatNap مقابله کرده و به مسیر خود ادامه می‌دهد،
+اما مشخص می‌شود که Prototype همچنان تهدید بزرگی است.
+<br><br>
+<b>پایان Chapter 3: خواب عمیق</b>
+</div>
+</div>
+
+<div class="card chapter4" onclick="openCard(this)">
+<h2>Chapter 4 : پناهگاه امن</h2>
+<div class="details">
+پس از اتفاقات Chapter 3، شخصیت اصلی همچنان در اعماق کارخانه‌ی
+Playtime Co. گرفتار است.
+<br><br>
+شخصیت اصلی با Poppy همراه می‌شود و در مسیر با موجودی به نام Doey
+روبه‌رو می‌شود.
+<br><br>
+Doey ابتدا دوستانه به نظر می‌رسد و شخصیت اصلی را به سمت
+قسمت‌های مختلف پناهگاه هدایت می‌کند.
+<br><br>
+اما مشخص می‌شود که پناهگاه آن‌قدرها هم امن نیست.
+<br><br>
+Kissy Missy نیز در داستان حضور دارد و سرنوشت او باعث نگرانی
+شخصیت اصلی و Poppy می‌شود.
+<br><br>
+در ادامه، اسناد مربوط به دکتر و آزمایش‌های مخفی کارخانه
+اطلاعات بیشتری از گذشته‌ی Playtime Co. آشکار می‌کنند.
+<br><br>
+در پایان، زمانی که شخصیت اصلی فکر می‌کند ممکن است بتواند
+از این بخش خارج شود، موجودی آشنا دوباره ظاهر می‌شود:
+<br><br>
+<b>Huggy Wuggy</b>
+<br><br>
+<b>پایان Chapter 4: پناهگاه امن</b>
+</div>
+</div>
+
+<div class="card chapter5" onclick="openCard(this)">
+<h2>Chapter 5 : چیزای خراب 🖤</h2>
+<div class="details">
+داستان چپتر پنجم دقیقاً بعد از اتفاقات چپتر چهارم ادامه پیدا می‌کند.
+<br><br>
+شخصیت اصلی پس از سقوط به بخش‌های زیرزمینی کارخانه،
+در آزمایشگاه‌های زیر Safe Haven قرار می‌گیرد.
+<br><br>
+Huggy Wuggy دوباره ظاهر می‌شود و شخصیت اصلی را تعقیب می‌کند.
+<br><br>
+در این مسیر موجودات جدیدی مانند Wrongside Outimals دیده می‌شوند.
+<br><br>
+شخصیت اصلی با Glowby آشنا می‌شود که برای روشن کردن قسمت‌های
+تاریک به او کمک می‌کند.
+<br><br>
+سپس با Giblet روبه‌رو می‌شود که در ابتدا به شخصیت اصلی کمک می‌کند.
+<br><br>
+Prototype نیز همچنان یکی از بزرگ‌ترین تهدیدهای کارخانه است.
+<br><br>
+شخصیت اصلی با موجوداتی مانند Bron و Chum Chompkins روبه‌رو می‌شود
+و تلاش می‌کند اطلاعات مهمی درباره‌ی Prototype پیدا کند.
+<br><br>
+در Sweet Street، شخصیت اصلی با اطلاعات بیشتری درباره‌ی گذشته‌ی
+کارخانه و Huggy Wuggy روبه‌رو می‌شود.
+<br><br>
+سپس Lily Lovebraids ظاهر می‌شود و Poppy و Kissy Missy را گرفتار می‌کند.
+<br><br>
+شخصیت اصلی تلاش می‌کند آن‌ها را نجات دهد.
+<br><br>
+در ادامه Prototype وارد ماجرا می‌شود و درگیری شدیدی رخ می‌دهد.
+<br><br>
+شخصیت اصلی و همراهانش تلاش می‌کنند خودشان را به Data Center برسانند.
+<br><br>
+در پایان، شخصیت اصلی به نسخه‌ی پشتیبان مربوط به
+<b>دکتر هارلی ساویر (The Doctor)</b> دسترسی پیدا می‌کند.
+<br><br>
+صدای دکتر از داخل سیستم پخش می‌شود و مشخص می‌شود
+اطلاعات مربوط به او هنوز در سیستم باقی مانده است.
+<br><br>
+<b>پایان Chapter 5: چیزای خراب</b>
+</div>
+</div>
+
+<div class="card project" onclick="openCard(this)">
+<h2>Project: Playtime 🧩</h2>
+<div class="details">
+Project: Playtime یک بازی چندنفره در دنیای Poppy Playtime است.
+<br><br>
+بازیکنان باید در محیط کارخانه فعالیت کنند،
+معماها را حل کنند و برای کامل کردن اهداف خود تلاش کنند.
+<br><br>
+در همین زمان، موجودات خطرناک کارخانه می‌توانند
+بازیکنان را تعقیب کنند.
+<br><br>
+همکاری بین بازیکنان و حل درست معماها نقش مهمی
+در پیشرفت در این بخش دارد.
+</div>
+</div>
+
+<div class="channel">
+<div class="channel-title">ساخته شده توسط کانال</div>
+<a href="https://rubika.ir/poppy_play_t_i_m_e" target="_blank" rel="noopener noreferrer">
+@poppy_play_t_i_m_e
+</a>
+</div>
+
+</div>
+
+<footer>
+به زودی توضیحات جدیدی در این وب‌سایت قرار میگیرد ، همراه ما باشید.
+</footer>
+
+<script>
+function openCard(card){
+    const details = card.querySelector(".details");
+    if(details.classList.contains("show")){
+        details.classList.remove("show");
+    }else{
+        document.querySelectorAll(".details").forEach(function(item){
+            item.classList.remove("show");
+        });
+        details.classList.add("show");
+    }
+}
+</script>
+
+</body>
+  </html>
